@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoolUp", "RoolUp.csproj", "{382D7C17-B580-498F-BFB2-F2B97CC925CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollUp.Test", "..\RollUp.Test\RollUp.Test.csproj", "{87C00171-2EED-4ACE-87AA-1C473EE56D17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{382D7C17-B580-498F-BFB2-F2B97CC925CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{382D7C17-B580-498F-BFB2-F2B97CC925CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{382D7C17-B580-498F-BFB2-F2B97CC925CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{382D7C17-B580-498F-BFB2-F2B97CC925CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87C00171-2EED-4ACE-87AA-1C473EE56D17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87C00171-2EED-4ACE-87AA-1C473EE56D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87C00171-2EED-4ACE-87AA-1C473EE56D17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87C00171-2EED-4ACE-87AA-1C473EE56D17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67FEB40F-E345-4D4F-9A73-5101C7664563}
+	EndGlobalSection
+EndGlobal
