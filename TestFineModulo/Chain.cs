@@ -6,7 +6,7 @@ namespace RoolUp
 		private string _gtin;
         private string _variant;
         private string _product;
-        private int _price;
+        private string _price;
 
         public string Gtin { get { return _gtin; } }
 
@@ -14,9 +14,9 @@ namespace RoolUp
 
         public string Product { get { return _product; } }
 
-        public int Price { get { return _price; } }
+        public string Price { get { return _price; } }
 
-        public Chain(string gtin, string variant, string product, int price)
+        public Chain(string gtin, string variant, string product, string price)
         {
             _gtin = gtin;
             _variant = variant;
