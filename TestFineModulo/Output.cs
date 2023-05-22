@@ -14,8 +14,11 @@ namespace RoolUp
 			{
 				if (CheckMoreProduct(chains))
 				{
-                    return  string.Join(", ", chains.Distinct().Select(x => $"{x.Product} {x.Price}")); 
-				}
+                    var groupedChains = chains.GroupBy(x => x.Product)
+                          .Select(g => new { Product = g.Key, Price = g.First().Price });
+					var res = string.Join(", ", groupedChains.Select(x => $"{x.Product} {x.Price}"));
+					return res;
+                }
 				else
 				{
                     var res = chains.First();
@@ -27,10 +30,8 @@ namespace RoolUp
 		}
 		private bool CheckMoreProduct(List<Chain> chains)
 		{
-			var distinctProducts = chains.Select(x => x.Product).Distinct().Count();
-			var res = distinctProducts > 1 ? true : false;
-			return res;
-		}
+            return chains.Select(x => x.Product).Distinct().Count() > 1;
+        }
     }
 
 }
