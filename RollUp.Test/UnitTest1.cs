@@ -67,6 +67,7 @@ public class UnitTest1
         listOfChain.Add(item2);
         listOfChain.Add(item3);
         listOfChain.Add(item4);
+        listOfChain.Add(item5);
 
         Assert.Equal("P1 100", _sut.CheckPrice(listOfChain));
     }
@@ -88,6 +89,7 @@ public class UnitTest1
         listOfChain.Add(item2);
         listOfChain.Add(item3);
         listOfChain.Add(item4);
+        listOfChain.Add(item5);
 
         Assert.Equal("P1 100, P2 100", _sut.CheckPrice(listOfChain));
     }
